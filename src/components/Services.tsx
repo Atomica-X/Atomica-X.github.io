@@ -18,93 +18,123 @@ interface ServiceDetail {
 const fallbackServices: ServiceDetail[] = [
   {
     number: '01',
-    title: 'AI Engineering',
-    description:
-      'Custom machine learning models, natural language processing, computer vision, and intelligent automation systems that transform raw data into actionable intelligence.',
-    technologies: ['TensorFlow', 'PyTorch', 'OpenAI', 'LangChain'],
+    title: 'AI-консультант',
+    description: 'Автономный AI-агент, который интегрируется в ваш бизнес-процесс и принимает решения на основе анализа данных с 190 специализированных агентов ATOMICA. Выполняет мониторинг рынка, поиск партий и подготовку коммерческих предложений без участия человека.',
+    technologies: ['SLM-модели', 'MCP-шлюзы', 'SQL-базы', 'Парсеры', 'AI-агенты'],
     deliverables: [
-      'Custom LLM Fine-Tuning & Prompt Pipelines',
-      'Real-Time Computer Vision & OCR Systems',
-      'Predictive Analytics & Recommendation Engines',
-      'Automated MLOps & Continuous Training Pipelines',
+      'Автономный мониторинг рынка 24/7',
+      'Поиск партий за минуты',
+      'Подготовка коммерческих предложений без участия человека',
+      'Интеграция через стандартные API'
     ],
-    timeline: '6 - 12 Weeks',
-    keyFeatures: ['99.5% Accuracy Thresholds', 'Sub-100ms Inference Latency', 'SOC2 Compliant Data Privacy'],
+    timeline: '2–4 недели',
+    keyFeatures: [
+      'Работает 24/7/365 без перерывов',
+      'Принимает решения за минуты, а не дни',
+      'Интеграция без изменения вашей инфраструктуры',
+      'Обработка данных из 1000+ источников в реальном времени',
+      'Исключение субъективного фактора'
+    ],
   },
   {
     number: '02',
-    title: 'Web Development',
-    description:
-      'High-performance web applications built with modern frameworks, optimized for speed, accessibility, and seamless user experiences across all devices.',
-    technologies: ['React', 'Next.js', 'TypeScript', 'Node.js'],
+    title: 'Цифровой фрахт',
+    description: 'Автономная оптимизация логистических маршрутов и расчёт фрахтовых ставок на основе данных о морских расписаниях, транспортных ограничениях и валютных курсах. Сокращает время поиска оптимального маршрута с дней до секунд.',
+    technologies: ['MCP-серверы', 'SLM-модели', 'SQL-базы', 'Парсеры', 'API логистики'],
     deliverables: [
-      'Headless Architecture & SSR Web Platforms',
-      'Sub-Second Page Load Optimization',
-      'Cross-Platform Mobile Progressive Apps',
-      'Custom Microservices & GraphQL APIs',
+      'Оптимальный маршрут за секунды',
+      'Расчёт фрахта с учётом НДС и пошлин',
+      'Прозрачный трекинг груза в реальном времени',
+      'Интеграция с валютными курсами'
     ],
-    timeline: '4 - 10 Weeks',
-    keyFeatures: ['100/100 Lighthouse Performance', 'SEO & Accessibility Optimized', 'Global Edge CDN Deployment'],
+    timeline: '3–6 недель',
+    keyFeatures: [
+      'Автоматический подбор маршрута за секунды',
+      'Экономия на фрахте до 18%',
+      'Прозрачный трекинг статуса груза',
+      'Интеграция с валютными курсами',
+      'Автоматическая адаптация к изменениям цен'
+    ],
   },
   {
     number: '03',
-    title: 'Creative Design',
-    description:
-      'Award-winning visual identities, immersive interfaces, and motion design that captivate audiences and elevate brand perception to new heights.',
-    technologies: ['Figma', 'After Effects', 'Blender', 'Cinema 4D'],
+    title: 'BI-аналитика',
+    description: 'Система автономного сбора, обработки и визуализации бизнес-данных из ваших источников и внешних рыночных источников. Создаёт дашборды и аналитические отчёты без участия аналитика — ИИ сам определяет, какие метрики важны именно вашему бизнесу.',
+    technologies: ['SLM-модели', 'SQL-базы', 'MCP-шлюзы', 'AI-агенты', 'ETL-агенты'],
     deliverables: [
-      'Interactive Design Systems & UI Components',
-      '3D Product Motion Graphics & Visuals',
-      'High-Fidelity Wireframes & User Prototypes',
-      'UX Journey Optimization & Heatmap Audits',
+      'Автоматическая генерация отчётов по расписанию',
+      'Обнаружение скрытых трендов и аномалий',
+      'Интеграция с внешними рыночными данными',
+      'Экспорт в Excel, PDF, CSV'
     ],
-    timeline: '3 - 8 Weeks',
-    keyFeatures: ['Pixel-Perfect Token Libraries', '60fps Micro-Animations', 'Multi-Brand System Scalability'],
+    timeline: '2–5 недель',
+    keyFeatures: [
+      'Отчёты без участия аналитика',
+      'Обнаружение аномалий без ручной настройки',
+      'Интеграция с внешними источниками',
+      'Экспорт в любые форматы',
+      'Централизованное управление доступом'
+    ],
   },
   {
     number: '04',
-    title: 'Automation Systems',
-    description:
-      'End-to-end workflow automation, intelligent process optimization, and custom integrations that eliminate manual tasks and accelerate business operations.',
-    technologies: ['Zapier', 'n8n', 'Python', 'Selenium'],
+    title: 'Интеграция платежей',
+    description: 'Платёжный шлюз для работы с фиатными и криптовалютными активами с автоматическим аудитом и соответствием регуляциям. Обрабатывает расчёты между контрагентами в реальном времени, включая валютные конвертации и налоговые расчёты.',
+    technologies: ['MCP-серверы', 'SLM-модели', 'SQL-базы', 'Платёжные модули', 'API'],
     deliverables: [
-      'Enterprise Workflow Orchestration Engine',
-      'Automated Document Processing & Parsing',
-      'Cross-SaaS API Synchronization Bots',
-      'Error Recovery & Audit Alerting Logging',
+      'Мгновенная конвертация валют по курсу реального времени',
+      'Поддержка 47 фиатных валют и 12 криптовалют',
+      'Автоматическая генерация счетов и актов',
+      'Полный аудиторский след'
     ],
-    timeline: '2 - 6 Weeks',
-    keyFeatures: ['80%+ Reduction in Manual Hours', 'Real-Time Failure Notifications', 'Self-Healing Retry Logic'],
+    timeline: '4–8 недель',
+    keyFeatures: [
+      'Мгновенная конвертация валют',
+      '47 фиатных валют и 12 криптовалют',
+      'Автоматическая генерация документов',
+      'Шифрование AES-256',
+      'Аудит для GDPR, PCI DSS, SOC 2'
+    ],
   },
   {
     number: '05',
-    title: 'Cloud Infrastructure',
-    description:
-      'Scalable cloud architecture, containerized deployments, serverless computing, and DevOps pipelines designed for reliability and performance.',
-    technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform'],
+    title: 'Облачная инфраструктура',
+    description: 'Управляемые вычислительные мощности для развёртывания и масштабирования AI-агентов ATOMICA. Обеспечивает 99.99% uptime, автоматическое масштабирование и защиту данных на уровне предприятия.',
+    technologies: ['Kubernetes', 'AES-256', 'Edge-узлы', 'SQL-базы', 'SLM-модели'],
     deliverables: [
-      'Infrastructure as Code (IaC) Repositories',
-      'Multi-Region Kubernetes Auto-Scaling',
-      'Zero-Downtime CI/CD Build Pipelines',
-      'Disaster Recovery & Automated Backup Plans',
+      'Масштабирование до 10 000 запросов',
+      'Балансировка нагрузки между регионами',
+      'Zero-downtime деплой новых версий',
+      'Автоматическое резервное копирование'
     ],
-    timeline: '4 - 8 Weeks',
-    keyFeatures: ['99.99% Uptime SLA', 'Automated Cost Savings Optimization', 'Bank-Grade Security Hardening'],
+    timeline: '2–6 недель',
+    keyFeatures: [
+      'Масштабирование до 10 000 запросов',
+      'Балансировка нагрузки между регионами',
+      'Zero-downtime деплой',
+      'Защита от DDoS и brute-force',
+      'Автоматическое резервное копирование'
+    ],
   },
   {
     number: '06',
-    title: 'Brand Identity',
-    description:
-      'Comprehensive brand strategy, visual systems, and messaging frameworks that create memorable identities and drive market differentiation.',
-    technologies: ['Strategy', 'Typography', 'Guidelines', 'Systems'],
+    title: 'Брендинг и стратегия',
+    description: 'Разработка позиционирования и коммуникационной стратегии для технологических B2B-компаний. На основе анализа рыночных данных и конкурентного аудита создаётся месседж, который привлекает enterprise-клиентов и удерживает их.',
+    technologies: ['AI-агенты', 'SLM-модели', 'SQL-базы', 'MCP-шлюзы', 'Аналитика'],
     deliverables: [
-      'Complete Brand Book & Style Guidelines',
-      'Custom Typography & Color Palette Tokens',
-      'Marketing Collateral & Presentation Decks',
-      'Brand Voice & Messaging Playbook',
+      'Стратегия на основе данных из 1000+ источников',
+      'Позиционирование, проверенное на рынке',
+      'Контент, который продаёт',
+      'Анализ ROI в реальном времени'
     ],
-    timeline: '3 - 6 Weeks',
-    keyFeatures: ['100% Brand Ownership Rights', 'Multi-Channel Scalability', 'Vector Master Asset Library'],
+    timeline: '3–8 недель',
+    keyFeatures: [
+      'Стратегия на основе данных, а не интуиции',
+      'Позиционирование, проверенное с первых недель',
+      'Контент, который продаёт',
+      'Анализ ROI брендинговых кампаний',
+      'Интеграция с CRM и аналитикой'
+    ],
   },
 ];
 
@@ -174,11 +204,8 @@ export default function Services() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="section-title"
-
           >
-            Systems shaped for
-            <br />
-            ambitious product teams
+            Инструменты для быстрых сделок
           </motion.h2>
 
           <motion.div
@@ -191,7 +218,7 @@ export default function Services() {
               href="#contact"
               className="section-cta btn-cut px-6 py-3.5 text-sm font-medium rounded-xl"
             >
-              <span>Custom Service Inquiry</span>
+              <span>Оставить заявку</span>
               <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -202,7 +229,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div key={index} className="group relative">
               {/* Hover glow */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-orange-500/10 to-orange-600/10 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
 
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
@@ -259,7 +286,7 @@ export default function Services() {
                     onClick={() => setSelectedService(service)}
                     className="flex items-center gap-2 text-white text-sm hover:text-white/80 transition-all duration-300 font-medium"
                   >
-                    <span>View Deliverables & Spec</span>
+                    <span>Подробнее</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
 
@@ -267,7 +294,7 @@ export default function Services() {
                     onClick={() => setSelectedService(service)}
                     className="text-xs section-cta-outline px-3.5 py-2 rounded-lg border border-white/15 transition-all"
                   >
-                    Request Consultation
+                    Оставить заявку
                   </button>
                 </div>
               </motion.div>
@@ -294,7 +321,7 @@ export default function Services() {
                   </div>
                   <div>
                     <h3 className="text-white font-medium text-lg">{selectedService.title}</h3>
-                    <p className="text-white/40 text-xs">Full Specification & Deliverables</p>
+                    <p className="text-white/40 text-xs">Полная спецификация</p>
                   </div>
                 </div>
                 <button
@@ -312,7 +339,7 @@ export default function Services() {
                 {/* Key Deliverables */}
                 <div>
                   <h4 className="text-white text-xs font-semibold uppercase tracking-wider mb-3 text-white/50">
-                    Included Deliverables
+                    Что вы получите
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {selectedService.deliverables.map((item, idx) => (
@@ -330,11 +357,11 @@ export default function Services() {
                 {/* Quick Consultation Form */}
                 <div className="bg-white/[0.03] border border-white/10 rounded-xl p-5">
                   <h4 className="text-white text-sm font-medium mb-1 flex items-center gap-2">
-                    <Sparkles size={14} className="text-blue-400" />
-                    Request Service Consultation
+                    <Sparkles size={14} className="text-orange-400" />
+                    Оставить заявку
                   </h4>
                   <p className="text-white/40 text-xs mb-4">
-                    Send your project details for an immediate response from our engineering lead.
+                    Отправьте запрос, и мы свяжемся с вами в течение 15 минут.
                   </p>
 
                   <form onSubmit={handleInquirySubmit} className="space-y-3">
@@ -342,7 +369,7 @@ export default function Services() {
                       <input
                         type="text"
                         required
-                        placeholder="Your Name"
+                        placeholder="Ваше имя"
                         value={inquiryName}
                         onChange={(e) => setInquiryName(e.target.value)}
                         className="bg-white/5 border border-white/10 rounded-lg px-3.5 py-2 text-xs text-white placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors"
@@ -350,7 +377,7 @@ export default function Services() {
                       <input
                         type="email"
                         required
-                        placeholder="Work Email"
+                        placeholder="Email"
                         value={inquiryEmail}
                         onChange={(e) => setInquiryEmail(e.target.value)}
                         className="bg-white/5 border border-white/10 rounded-lg px-3.5 py-2 text-xs text-white placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors"
@@ -358,7 +385,7 @@ export default function Services() {
                     </div>
                     <textarea
                       rows={2}
-                      placeholder="Brief notes or requirements (optional)..."
+                      placeholder="Кратко опишите ваш запрос..."
                       value={inquiryNotes}
                       onChange={(e) => setInquiryNotes(e.target.value)}
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-3.5 py-2 text-xs text-white placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors resize-none"
@@ -370,7 +397,7 @@ export default function Services() {
                         className="bg-white text-black px-5 py-2 text-xs font-medium rounded-lg hover:bg-white/90 transition-colors flex items-center gap-1.5 disabled:opacity-50"
                       >
                         <Send size={12} />
-                        {submitting ? 'Submitting...' : 'Submit Inquiry'}
+                        {submitting ? 'Отправка...' : 'Отправить'}
                       </button>
                     </div>
                   </form>

@@ -46,7 +46,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // Mock session for local demo/development without Supabase backend configured
       const mockUser = {
         id: 'dev-admin-id',
-        email: email || 'admin@vortx.io',
+        email: email || 'admin@atomica.io',
         app_metadata: { provider: 'email' },
         user_metadata: { full_name: 'Admin User' },
         aud: 'authenticated',
@@ -76,7 +76,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // Fallback dev login in local environment
       const mockUser = {
         id: 'dev-admin-id',
-        email: email || 'admin@vortx.io',
+        email: email || 'admin@atomica.io',
         app_metadata: { provider: 'email' },
         user_metadata: { full_name: 'Admin User' },
         aud: 'authenticated',

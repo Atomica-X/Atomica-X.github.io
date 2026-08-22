@@ -1,6 +1,10 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Toaster } from 'react-hot-toast';
+import FreightCalculator from './pages/FreightCalculator';
+import ParcelTracker from './pages/ParcelTracker';
+import CurrencyConverter from './pages/CurrencyConverter';
+import SupplierSearch from './pages/SupplierSearch';
 import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/admin/ProtectedRoute';
 import AdminLayout from './components/admin/AdminLayout';
@@ -13,7 +17,6 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Process from './components/Process';
 import Technologies from './components/Technologies';
-import Testimonials from './components/Testimonials';
 import Statistics from './components/Statistics';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -46,7 +49,6 @@ function LandingPage() {
           <Projects />
           <Process />
           <Technologies />
-          <Testimonials />
           <Statistics />
           <FAQ />
           <Contact />
@@ -102,6 +104,10 @@ function App() {
 
           {/* Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/freight" element={<FreightCalculator />} />
+          <Route path="/tracking" element={<ParcelTracker />} />
+          <Route path="/currency" element={<CurrencyConverter />} />
+          <Route path="/suppliers" element={<SupplierSearch />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

@@ -8,58 +8,51 @@ const steps = [
   {
     number: '01',
     title: 'Discovery',
-    description:
-      'Deep research into your business, users, and market landscape. We analyze competitors, identify opportunities, and define success metrics.',
-    duration: '1-2 weeks',
-    deliverables: ['Stakeholder Interviews', 'Competitive Matrix', 'Technical Requirements Spec'],
+    description: 'Глубокий аудит ваших бизнес-процессов, IT-инфраструктуры и точек боли. 190 AI-агентов одновременно анализируют ваши данные, интервьюируют ключевых сотрудников и сравнивают с нашей внутренней базой кейсов.',
+    duration: '3–5 дней',
+    deliverables: ['Техническая спецификация', 'Карта боли', 'ROI-калькуляция'],
   },
   {
     number: '02',
-    title: 'Strategy',
-    description:
-      'Comprehensive roadmap development with technical architecture, user flows, and feature prioritization aligned to business objectives.',
-    duration: '1-2 weeks',
-    deliverables: ['System Architecture Blueprint', 'User Journey Mapping', 'Sprint Backlog & Scope'],
+    title: 'Подбор партий',
+    description: 'Автономный поиск подходящих партий на основе ваших требований. 190 AI-агентов и собственные парсеры мониторят складские остатки, банкротные и ликвидационные активы, а также стоковую продукцию в реальном времени. Система находит оптимальные партии за минуты, а не дни.',
+    duration: '1–3 дня',
+    deliverables: ['Список доступных партий', 'Расчёт TCO', 'Рекомендации по выбору'],
   },
   {
     number: '03',
-    title: 'Design',
-    description:
-      'High-fidelity prototypes, design systems, and interactive mockups that bring your vision to life before a single line of code is written.',
-    duration: '2-4 weeks',
-    deliverables: ['Figma Token System', 'Clickable Prototype', 'Usability Test Reports'],
+    title: 'Оценка и предложение',
+    description: 'Автономная оценка найденных партий через 15 AI-агентов, которые проверяют юридические реквизиты, сканируют санкционные списки, анализируют рыночные цены и рассчитывают полную себестоимость. Формируется персонализированное коммерческое предложение.',
+    duration: '1–2 дня',
+    deliverables: ['Коммерческое предложение', 'Детали партии', 'Условия оплаты'],
   },
   {
     number: '04',
-    title: 'Development',
-    description:
-      'Agile development sprints with clean code, comprehensive testing, and weekly demos to ensure alignment and rapid iteration.',
-    duration: '4-12 weeks',
-    deliverables: ['Production Ready Codebase', 'Automated CI/CD Pipeline', 'Weekly Staging Demos'],
+    title: 'Согласование и контракт',
+    description: 'Подготовка и согласование договора через SLM-модели анализа документов. Все условия проверяются на соответствие вашим требованиям и регуляторным стандартам. Поддержка электронной подписи для мгновенного подписания.',
+    duration: '2–4 дня',
+    deliverables: ['Подписанный договор', 'Платёжный порядок', 'Подтверждение партии'],
   },
   {
     number: '05',
-    title: 'Testing',
-    description:
-      'Rigorous QA across devices, browsers, and use cases. Performance optimization, security audits, and accessibility compliance.',
-    duration: '1-2 weeks',
-    deliverables: ['Penetration Testing Audit', 'Lighthouse 95+ Score Report', 'Cross-Browser Suite'],
+    title: 'Логистика и фрахт',
+    description: 'Автономная оптимизация логистических маршрутов через цифровой фрахт. 47 AI-агентов анализируют морские расписания, транспортные ограничения и погодные условия для выбора оптимального маршрута. Интеграция с вашими логистическими партнёрами через MCP-шлюзы.',
+    duration: '1–2 дня',
+    deliverables: ['Маршрут доставки', 'Расчёт фрахта', 'Трек-номер', 'План отгрузки'],
   },
   {
     number: '06',
-    title: 'Launch',
-    description:
-      'Strategic deployment with monitoring, analytics integration, and post-launch optimization to ensure flawless performance.',
-    duration: '1 week',
-    deliverables: ['DNS & CDN Switchover', 'Real-Time Error Alerting', 'Analytics Dashboard'],
+    title: 'Отгрузка и расчёты',
+    description: 'Координация отгрузки через наших партнёров и выполнение расчётов через платёжный шлюз. Поддержка 47 фиатных валют и 12 криптовалют с мгновенной конвертацией по курсу реального времени. Автоматическая генерация счетов и актов.',
+    duration: '1–3 дня',
+    deliverables: ['Подтверждение отгрузки', 'Финансовые документы', 'Подтверждение оплаты', 'Передача товара'],
   },
   {
     number: '07',
-    title: 'Support',
-    description:
-      'Ongoing maintenance, feature enhancements, and dedicated support to evolve your product as your business grows.',
-    duration: 'Ongoing',
-    deliverables: ['SLA Guarantee', '24/7 Server Monitoring', 'Monthly Feature Releases'],
+    title: 'Поддержка и развитие партнёрства',
+    description: 'Постоянный мониторинг эффективности через BI-аналитику, ежемесячные AI-аудиты и автоматическое масштабирование. Мы не сдаём проект — мы растём вместе с вашим бизнесом, находя новые возможности для оптимизации.',
+    duration: 'ongoing',
+    deliverables: ['Ежемесячные отчёты', 'Roadmap на следующий квартал', 'SLA 15 минут на критические задачи'],
   },
 ];
 
@@ -95,14 +88,14 @@ export default function Process() {
   };
 
   const handleBookDiscovery = () => {
-    toast.success(`Estimate booked! Calculated timeframe: ${estimatedWeeks} weeks.`);
+    toast.success(`Расчёт выполнен! Примерный срок: ${estimatedWeeks} недель.`);
     const contactElem = document.getElementById('contact');
     if (contactElem) contactElem.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section ref={ref} id="process" className="section-shell section-shell--graphite py-24 md:py-32 px-6 md:px-10 relative overflow-hidden">
-      <div className="section-orb top-[10%] right-[6%] w-[560px] h-[560px] bg-blue-500/8" />
+      <div className="section-orb top-[10%] right-[6%] w-[560px] h-[560px] bg-orange-500/8" />
       <div className="section-orb bottom-[-120px] left-[8%] w-[480px] h-[480px] bg-white/5" />
       <div className="max-w-7xl mx-auto relative">
         {/* Section label */}
@@ -117,7 +110,7 @@ export default function Process() {
             <div className="w-2 h-2 rounded-full bg-white/20" />
           </div>
           <span className="section-label">
-            Our Process
+            Как мы работаем
           </span>
         </motion.div>
 
@@ -128,7 +121,7 @@ export default function Process() {
           className="mb-8"
         >
           <div className="section-rail w-24 mb-5" />
-          <p className="section-eyebrow">Delivery framework</p>
+          <p className="section-eyebrow">Процесс</p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
@@ -138,9 +131,7 @@ export default function Process() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="section-title max-w-3xl"
           >
-            A deliberate path
-            <br />
-            from concept to launch
+            От запроса до отгрузки — за считанные дни
           </motion.h2>
 
           <motion.div
@@ -153,7 +144,7 @@ export default function Process() {
               href="#contact"
               className="section-cta btn-cut px-6 py-3.5 text-sm font-medium rounded-xl"
             >
-              <span>Schedule Discovery Call</span>
+              <span>Оставить заявку</span>
               <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
@@ -165,7 +156,7 @@ export default function Process() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-white/70 text-lg leading-relaxed max-w-3xl mb-16"
         >
-          We move with clarity from first conversation to launch, keeping the product sharp, the collaboration calm, and the delivery confident.
+          Мы сопровождаем вас на каждом этапе: от подбора партии до поставки. Никаких задержек, только прозрачность и скорость.
         </motion.p>
 
         {/* Process steps */}
@@ -235,12 +226,12 @@ export default function Process() {
           className="section-card rounded-2xl p-8 md:p-12 relative overflow-hidden"
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+            <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400">
               <Calculator size={20} />
             </div>
             <div>
-              <h3 className="text-white text-xl font-medium">Interactive Project Estimator</h3>
-              <p className="text-white/50 text-xs">Estimate your delivery timeline based on project scope</p>
+              <h3 className="text-white text-xl font-medium">Калькулятор вашей сделки</h3>
+              <p className="text-white/50 text-xs">Оцените примерный срок и стоимость партии под ваш запрос</p>
             </div>
           </div>
 
@@ -250,14 +241,14 @@ export default function Process() {
               {/* Type Select */}
               <div>
                 <label className="text-white/60 text-xs font-semibold uppercase tracking-wider block mb-3">
-                  Project Type
+                  Тип сделки
                 </label>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                   {[
-                    { id: 'web', label: 'Web Platform' },
-                    { id: 'ai', label: 'AI Solution' },
-                    { id: 'cloud', label: 'Cloud Migration' },
-                    { id: 'full', label: 'Full Product Suite' },
+                    { id: 'web', label: 'Стандартная партия' },
+                    { id: 'ai', label: 'Сложный поиск' },
+                    { id: 'cloud', label: 'Крупная партия' },
+                    { id: 'full', label: 'Полный пакет' },
                   ].map((item) => (
                     <button
                       key={item.id}
@@ -278,13 +269,13 @@ export default function Process() {
               {/* Scope Size */}
               <div>
                 <label className="text-white/60 text-xs font-semibold uppercase tracking-wider block mb-3">
-                  Project Scale
+                  Объём партии
                 </label>
                 <div className="grid grid-cols-3 gap-2.5">
                   {[
-                    { id: 'mvp', label: 'Core MVP (Fast Launch)' },
-                    { id: 'growth', label: 'Growth Platform (Full Features)' },
-                    { id: 'enterprise', label: 'Enterprise Ecosystem' },
+                    { id: 'mvp', label: 'До 10 контейнеров' },
+                    { id: 'growth', label: '10–50 контейнеров' },
+                    { id: 'enterprise', label: '50+ контейнеров' },
                   ].map((item) => (
                     <button
                       key={item.id}
@@ -308,13 +299,13 @@ export default function Process() {
               <div>
                 <div className="flex items-center gap-2 text-white/50 text-xs uppercase tracking-wider mb-2">
                   <Calendar size={14} />
-                  Estimated Delivery Time
+                  Примерный срок
                 </div>
                 <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                  {estimatedWeeks} <span className="text-lg font-normal text-white/60">Weeks</span>
+                  {estimatedWeeks} <span className="text-lg font-normal text-white/60">недель</span>
                 </div>
                 <p className="text-white/50 text-xs leading-relaxed mb-6">
-                  Includes full Discovery, Architecture, Agile Sprints, QA, and Production Launch.
+                  Включает подбор партии, оценку, логистику и полное сопровождение сделки.
                 </p>
               </div>
 
@@ -323,7 +314,7 @@ export default function Process() {
                 className="w-full section-cta py-3.5 px-4 text-xs font-medium rounded-xl flex items-center justify-center gap-2 btn-cut"
               >
                 <Sparkles size={14} />
-                <span>Book This Timeline</span>
+                <span>Запросить расчёт</span>
               </button>
             </div>
           </div>

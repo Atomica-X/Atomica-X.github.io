@@ -42,7 +42,7 @@ export default function AdminLogin() {
             <path d="M128 256 L128 192 A64 64 0 0 1 192 128 L256 128 L256 256 Z" />
           </svg>
           <span className="text-white text-xs tracking-[0.4em] font-light">
-            V O R T X
+            A T O M I C A
           </span>
           <h1 className="text-white text-2xl font-medium mt-4">Admin Login</h1>
         </div>
@@ -57,7 +57,7 @@ export default function AdminLogin() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors"
-                placeholder="admin@vortx.io"
+                placeholder="admin@atomica.io"
                 required
                 autoComplete="email"
               />
@@ -97,7 +97,7 @@ export default function AdminLogin() {
 
         <div className="mt-6 text-center text-white/40 text-xs">
           <p>Default credentials:</p>
-          <p>Email: admin@vortx.io</p>
+          <p>Email: admin@atomica.io</p>
           <p>Password: (Set in Supabase Auth)</p>
         </div>
       </div>

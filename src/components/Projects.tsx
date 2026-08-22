@@ -19,70 +19,59 @@ interface ProjectItem {
 
 const fallbackProjects: ProjectItem[] = [
   {
-    name: 'Nexus Commerce',
-    industry: 'E-Commerce',
-    client: 'GlobalRetail Inc.',
-    problem: 'Outdated platform causing 40% cart abandonment and poor mobile experience.',
-    solution: 'Built a headless commerce platform with AI-powered recommendations and real-time inventory sync.',
-    stack: ['Next.js', 'Shopify', 'TensorFlow', 'Stripe'],
-    timeline: '14 weeks',
-    outcome: 'Reduced cart abandonment to 12%, increased mobile conversions by 180%, generated $4.2M additional revenue in first quarter.',
+    name: 'Быстрая ликвидация товарных остатков',
+    industry: 'Оптовая торговля',
+    client: 'Производители и дистрибьюторы',
+    problem: 'Затоваривание складов, срочная необходимость освободить площади и вернуть ликвидность.',
+    solution: 'Мы выкупаем партии за собственные средства, предлагаем честную цену на основе AI-анализа, организуем логистику и конфиденциальную дистрибуцию.',
+    outcome: 'Продажа в течение 24 часов, прозрачные условия, защита бренда, полный контроль над каналами сбыта.',
+    timeline: '24 часа',
     gradient: 'from-blue-500/20 to-cyan-500/20',
+    stack: ['AI-оценка', 'Парсеры', 'MCP-шлюзы', 'Логистические модули'],
   },
   {
-    name: 'Aurora Health',
-    industry: 'Healthcare',
-    client: 'MediCare Partners',
-    problem: 'Fragmented patient data across 12 systems limiting care coordination.',
-    solution: 'Developed HIPAA-compliant AI platform unifying patient records with predictive health analytics.',
-    stack: ['React', 'Python', 'AWS', 'OpenAI'],
-    timeline: '22 weeks',
-    outcome: 'Unified 500K+ patient records, reduced administrative time by 65%, improved diagnostic accuracy by 34%.',
+    name: 'Доступ к закрытым партиям со скидкой',
+    industry: 'Оптовая торговля',
+    client: 'Дистрибьюторы и оптовики',
+    problem: 'Поиск качественного товара по ценам ниже рынка требует времени и ресурсов, а лучшие предложения часто уходят к "своим".',
+    solution: 'Ежедневно сотни новых партий из Европы и СНГ. AI-аналитика помогает подобрать оптимальные предложения по цене, региону и срокам.',
+    outcome: 'Закупки по ценам на 20–70% ниже рыночных, экономия времени, доступ к закрытым активам до их появления на открытом рынке.',
+    timeline: 'Ежедневно',
     gradient: 'from-purple-500/20 to-pink-500/20',
+    stack: ['Региональные парсеры', 'ML-модели спроса', 'SQL-базы', 'Платёжный шлюз'],
   },
   {
-    name: 'Quantum Finance',
-    industry: 'FinTech',
-    client: 'Meridian Capital',
-    problem: 'Manual trading analysis taking 8+ hours daily, missing market opportunities.',
-    solution: 'Created real-time market intelligence platform with ML-driven trading signals.',
-    stack: ['TypeScript', 'Python', 'WebSocket', 'TensorFlow'],
-    timeline: '18 weeks',
-    outcome: 'Reduced analysis time to 12 minutes, identified 240% more opportunities, generated $12M profit increase.',
-    gradient: 'from-green-500/20 to-emerald-500/20',
+    name: 'Эксклюзивное предложение',
+    industry: '—',
+    client: '—',
+    problem: '—',
+    solution: 'Эти портфели доступны только по приглашению. Станьте нашим партнёром, чтобы получить доступ к закрытым сделкам и персональному AI-агенту.',
+    outcome: 'Запросите доступ, и мы подберём для вас уникальное предложение, которое не публикуется на сайте.',
+    timeline: 'По запросу',
+    gradient: 'from-gray-500/20 to-gray-400/20',
+    stack: [],
   },
   {
-    name: 'EduVerse Platform',
-    industry: 'Education',
-    client: 'Global Learning Network',
-    problem: 'Low engagement in online courses with 78% dropout rate.',
-    solution: 'Built immersive learning platform with gamification, AI tutors, and adaptive content.',
-    stack: ['Next.js', 'Three.js', 'OpenAI', 'Supabase'],
-    timeline: '16 weeks',
-    outcome: 'Reduced dropout to 23%, increased completion by 310%, serving 85K+ active students.',
-    gradient: 'from-orange-500/20 to-amber-500/20',
+    name: 'Эксклюзивное предложение',
+    industry: '—',
+    client: '—',
+    problem: '—',
+    solution: 'Эти портфели доступны только по приглашению. Станьте нашим партнёром, чтобы получить доступ к закрытым сделкам и персональному AI-агенту.',
+    outcome: 'Запросите доступ, и мы подберём для вас уникальное предложение, которое не публикуется на сайте.',
+    timeline: 'По запросу',
+    gradient: 'from-gray-500/20 to-gray-400/20',
+    stack: [],
   },
   {
-    name: 'VelocityAI Logistics',
-    industry: 'Supply Chain',
-    client: 'TransWorld Shipping',
-    problem: 'Inefficient route planning causing 35% fuel waste and delivery delays.',
-    solution: 'Deployed AI-powered logistics optimization with real-time route adjustment.',
-    stack: ['Python', 'TensorFlow', 'Google Maps', 'Docker'],
-    timeline: '20 weeks',
-    outcome: 'Cut fuel costs by 42%, improved on-time delivery to 96%, saved $8.4M annually.',
-    gradient: 'from-red-500/20 to-rose-500/20',
-  },
-  {
-    name: 'Stellar Brand Studio',
-    industry: 'Creative Agency',
-    client: 'Stellar Creative Co.',
-    problem: 'Manual asset management losing 15+ hours weekly, inconsistent brand delivery.',
-    solution: 'Built automated DAM system with AI tagging, version control, and brand guidelines engine.',
-    stack: ['React', 'Node.js', 'AWS S3', 'OpenAI'],
-    timeline: '12 weeks',
-    outcome: 'Saved 720 hours annually, ensured 100% brand compliance, accelerated campaigns by 45%.',
-    gradient: 'from-indigo-500/20 to-violet-500/20',
+    name: 'Эксклюзивное предложение',
+    industry: '—',
+    client: '—',
+    problem: '—',
+    solution: 'Эти портфели доступны только по приглашению. Станьте нашим партнёром, чтобы получить доступ к закрытым сделкам и персональному AI-агенту.',
+    outcome: 'Запросите доступ, и мы подберём для вас уникальное предложение, которое не публикуется на сайте.',
+    timeline: 'По запросу',
+    gradient: 'from-gray-500/20 to-gray-400/20',
+    stack: [],
   },
 ];
 
@@ -111,14 +100,11 @@ export default function Projects() {
       }))
     : fallbackProjects;
 
-  const categories = ['All', 'AI & ML', 'FinTech & E-Com', 'Healthcare & Supply Chain'];
+  const categories = ['All', 'Оптовая торговля', 'Логистика', 'Производство'];
 
   const filteredProjects = rawProjects.filter((p) => {
     if (activeCategory === 'All') return true;
-    if (activeCategory === 'AI & ML') return p.stack.some(t => ['TensorFlow', 'OpenAI', 'Python'].includes(t));
-    if (activeCategory === 'FinTech & E-Com') return ['E-Commerce', 'FinTech'].includes(p.industry);
-    if (activeCategory === 'Healthcare & Supply Chain') return ['Healthcare', 'Supply Chain'].includes(p.industry);
-    return true;
+    return p.industry.includes(activeCategory) || p.stack.some(t => t.includes('ML') || t.includes('AI'));
   });
 
   const handleDemoSubmit = (e: React.FormEvent) => {
@@ -126,7 +112,7 @@ export default function Projects() {
     setDemoSubmitting(true);
     setTimeout(() => {
       setDemoSubmitting(false);
-      toast.success(`Live demo request for ${demoModalProject?.name} submitted!`);
+      toast.success(`Заявка на доступ отправлена!`);
       setDemoModalProject(null);
       setDemoEmail('');
     }, 600);
@@ -134,7 +120,7 @@ export default function Projects() {
 
   const handleReviewSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Architecture review requested! Our lead will email you shortly.');
+    toast.success('Заявка отправлена! Мы свяжемся с вами в течение 15 минут.');
     setReviewEmail('');
   };
 
@@ -156,7 +142,7 @@ export default function Projects() {
             <div className="w-2 h-2 rounded-full bg-white/20" />
           </div>
           <span className="section-label">
-            Featured Work
+            Кейсы и предложения
           </span>
         </motion.div>
 
@@ -167,7 +153,7 @@ export default function Projects() {
           className="mb-8"
         >
           <div className="section-rail w-24 mb-5" />
-          <p className="section-eyebrow">Selected work</p>
+          <p className="section-eyebrow">Наши проекты</p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
@@ -177,9 +163,7 @@ export default function Projects() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="section-title max-w-3xl"
           >
-            Selected work that
-            <br />
-            carries real weight
+            Кейсы и предложения
           </motion.h2>
 
           {/* Filter tabs */}
@@ -245,7 +229,7 @@ export default function Projects() {
                   <div className="space-y-4 mb-6">
                     <div>
                       <div className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-1">
-                        Challenge
+                        Проблема
                       </div>
                       <p className="text-white/60 text-sm leading-relaxed">
                         {project.problem}
@@ -254,7 +238,7 @@ export default function Projects() {
 
                     <div>
                       <div className="text-xs font-semibold text-white/40 uppercase tracking-wider mb-1">
-                        Solution
+                        Решение
                       </div>
                       <p className="text-white/60 text-sm leading-relaxed">
                         {project.solution}
@@ -266,7 +250,7 @@ export default function Projects() {
                   <div className="bg-white/[0.04] border border-white/10 rounded-xl p-4 mb-6">
                     <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
                       <CheckCircle2 size={13} />
-                      Key Result & Impact
+                      Результат
                     </div>
                     <p className="text-white/90 text-sm font-medium leading-relaxed">
                       {project.outcome}
@@ -293,14 +277,14 @@ export default function Projects() {
                       className="section-cta-outline px-4 py-2.5 rounded-xl"
                     >
                       <Play size={12} className="fill-white" />
-                      <span>Request Live Demo</span>
+                      <span>Запросить доступ</span>
                     </button>
 
                     <a
                       href="#contact"
                       className="inline-flex items-center gap-1.5 text-xs text-white/60 hover:text-white transition-colors"
                     >
-                      <span>Similar Inquiry</span>
+                      <span>Оставить заявку</span>
                       <ArrowRight size={12} />
                     </a>
                   </div>
@@ -315,21 +299,21 @@ export default function Projects() {
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="section-card bg-gradient-to-r from-blue-950/40 via-purple-950/40 to-black rounded-2xl p-8 md:p-12 relative overflow-hidden"
+          className="section-card bg-gradient-to-r from-orange-950/40 via-orange-800/40 to-black rounded-2xl p-8 md:p-12 relative overflow-hidden"
         >
           <div className="max-w-2xl">
             <h3 className="text-white text-2xl md:text-3xl font-medium mb-3">
-              Have a Similar Enterprise Vision?
+              Хотите получить доступ к закрытым партиям?
             </h3>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Get a complimentary 30-minute system architecture review & estimate from our Principal Engineers.
+              Оставьте заявку — и мы подберём партию под ваш запрос в течение 24 часов.
             </p>
 
             <form onSubmit={handleReviewSubmit} className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 required
-                placeholder="Enter work email..."
+                placeholder="Ваш e-mail..."
                 value={reviewEmail}
                 onChange={(e) => setReviewEmail(e.target.value)}
                 className="bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-white/50 flex-1 transition-colors"
@@ -338,7 +322,7 @@ export default function Projects() {
                 type="submit"
                 className="bg-white text-black px-6 py-3 text-sm font-medium rounded-xl hover:bg-white/90 transition-all shrink-0 btn-cut"
               >
-                Request Free Review
+                Отправить заявку
               </button>
             </form>
           </div>
@@ -357,8 +341,8 @@ export default function Projects() {
             >
               <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                 <div className="flex items-center gap-2">
-                  <Play size={16} className="text-blue-400 fill-blue-400" />
-                  <h3 className="text-white font-medium">Request Live Demo</h3>
+                  <Play size={16} className="text-orange-400 fill-orange-400" />
+                  <h3 className="text-white font-medium">Запросить доступ</h3>
                 </div>
                 <button
                   onClick={() => setDemoModalProject(null)}
@@ -376,7 +360,7 @@ export default function Projects() {
               <form onSubmit={handleDemoSubmit} className="space-y-4">
                 <div>
                   <label className="text-white/60 text-xs font-medium mb-1.5 block">
-                    Work Email Address
+                    Ваш e-mail
                   </label>
                   <input
                     type="email"
@@ -394,7 +378,7 @@ export default function Projects() {
                     onClick={() => setDemoModalProject(null)}
                     className="px-4 py-2.5 text-xs text-white/60 hover:text-white"
                   >
-                    Cancel
+                    Отмена
                   </button>
                   <button
                     type="submit"
@@ -402,7 +386,7 @@ export default function Projects() {
                     className="bg-white text-black px-5 py-2.5 text-xs font-medium rounded-xl hover:bg-white/90 transition-colors flex items-center gap-1.5 disabled:opacity-50 btn-cut"
                   >
                     <Send size={12} />
-                    {demoSubmitting ? 'Sending...' : 'Schedule Walkthrough'}
+                    {demoSubmitting ? 'Отправка...' : 'Отправить'}
                   </button>
                 </div>
               </form>

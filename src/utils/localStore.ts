@@ -18,8 +18,8 @@ export interface LocalSubscriber {
   created_at: string;
 }
 
-const MESSAGES_KEY = 'vortx_local_messages';
-const NEWSLETTER_KEY = 'vortx_local_newsletter';
+const MESSAGES_KEY = 'atomica_local_messages';
+const NEWSLETTER_KEY = 'atomica_local_newsletter';
 
 const defaultMessages: LocalMessage[] = [
   {

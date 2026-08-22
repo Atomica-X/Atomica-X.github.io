@@ -8,11 +8,11 @@ export default function Footer() {
 
   return (
     <footer ref={ref} className="section-shell section-shell--graphite py-16 md:py-20 px-6 md:px-10 border-t border-white/10 relative overflow-hidden">
-      <div className="section-orb bottom-[-120px] left-[8%] w-[500px] h-[500px] bg-blue-500/8" />
+      <div className="section-orb bottom-[-120px] left-[8%] w-[500px] h-[500px] bg-orange-500/8" />
       <div className="section-orb top-[10%] right-[8%] w-[340px] h-[340px] bg-white/4" />
 
       <div className="max-w-7xl mx-auto relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand column */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -21,23 +21,13 @@ export default function Footer() {
             className="lg:col-span-2"
           >
             <div className="flex flex-col items-start mb-6">
-              <svg
-                className="w-12 h-12 mb-3"
-                viewBox="0 0 256 256"
-                fill="white"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M128 0 L128 64 A64 64 0 0 1 64 128 L0 128 L0 0 Z" />
-                <path d="M128 0 L256 0 L256 128 L192 128 A64 64 0 0 1 128 64 Z" />
-                <path d="M0 128 L64 128 A64 64 0 0 1 128 192 L128 256 L0 256 Z" />
-                <path d="M128 256 L128 192 A64 64 0 0 1 192 128 L256 128 L256 256 Z" />
-              </svg>
+              <img src="/atomica-logo.svg" alt="ATOMICA" className="w-12 h-12 mb-3 object-contain filter brightness-0 invert-1" />
               <span className="text-white text-xs tracking-[0.4em] font-light">
-                V O R T X
+                A T O M I C A
               </span>
             </div>
             <p className="text-white/60 leading-relaxed max-w-sm mb-6">
-              A global technology company creating premium digital products, AI solutions, and next-generation software systems since 2018.
+              ATOMICA — автономная торговая платформа для B2B-оптовой торговли. Мы покупаем крупные партии за собственные средства и предлагаем их дистрибьюторам по ценам ниже рынка.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -81,31 +71,31 @@ export default function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h3 className="text-white text-sm font-medium mb-4 tracking-wide">Services</h3>
+            <h3 className="text-white text-sm font-medium mb-4 tracking-wide">Услуги</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  AI Engineering
+                  AI-консультант
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Web Development
+                  Цифровой фрахт
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Creative Design
+                  BI-аналитика
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Automation
+                  Интеграция платежей
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Cloud Infrastructure
+                  Облачная инфраструктура
                 </a>
               </li>
             </ul>
@@ -117,31 +107,21 @@ export default function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h3 className="text-white text-sm font-medium mb-4 tracking-wide">Company</h3>
+            <h3 className="text-white text-sm font-medium mb-4 tracking-wide">Компания</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  About
+                <a href="#about" className="text-white/60 hover:text-white transition-colors text-sm">
+                  О нас
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Projects
+                <a href="#projects" className="text-white/60 hover:text-white transition-colors text-sm">
+                  Проекты
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Contact
+                <a href="#contact" className="text-white/60 hover:text-white transition-colors text-sm">
+                  Контакты
                 </a>
               </li>
             </ul>
@@ -153,31 +133,21 @@ export default function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h3 className="text-white text-sm font-medium mb-4 tracking-wide">Legal</h3>
+            <h3 className="text-white text-sm font-medium mb-4 tracking-wide">Правовая информация</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Privacy Policy
+                  Политика конфиденциальности
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Terms of Service
+                  Условия использования
                 </a>
               </li>
               <li>
                 <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
                   Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Licenses
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-                  Security
                 </a>
               </li>
             </ul>
@@ -192,17 +162,17 @@ export default function Footer() {
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p className="text-white/40 text-sm">
-            © 2026 VORTX. All rights reserved.
+            © 2026 ATOMICA. Все права защищены.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-white/40 hover:text-white/60 transition-colors text-sm">
-              Sitemap
+              Карта сайта
             </a>
             <a href="#" className="text-white/40 hover:text-white/60 transition-colors text-sm">
-              Accessibility
+              Доступность
             </a>
             <a href="#" className="text-white/40 hover:text-white/60 transition-colors text-sm">
-              Status
+              Статус
             </a>
           </div>
         </motion.div>

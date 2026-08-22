@@ -12,48 +12,50 @@ export default function About() {
     {
       id: 'mission' as const,
       icon: Rocket,
-      title: 'Mission',
-      subtitle: 'Driving Measurable Impact',
+      title: 'Миссия',
+      subtitle: 'Исключить человеческий фактор',
       description:
-        'To empower organizations with intelligent technology solutions that drive measurable impact, foster innovation, and create lasting value in an ever-evolving digital landscape.',
+        'Исключить человеческий фактор из операционных решений B2B-торговли, сохранив при этом полную коммерческую ответственность за ключевые развилки. Мы строим автономную среду, где субъективный фактор и операционные задержки полностью устранены.',
       highlights: [
-        'Enterprise AI & Machine Learning Integration',
-        'High-Throughput Distributed Cloud Systems',
-        'Human-Centered Digital Product Design',
+        'Автономная обработка данных 24/7',
+        'Принятие решений о сделках за минуты',
+        'Полное устранение субъективного фактора',
       ],
     },
     {
       id: 'vision' as const,
       icon: Sparkles,
-      title: 'Vision',
-      subtitle: 'Global Excellence Benchmark',
+      title: 'Видение',
+      subtitle: 'Стандарт автономной торговли',
       description:
-        'To be recognized as the global standard for excellence in creative technology, where every project we deliver becomes a benchmark for innovation, speed, and craftsmanship.',
+        'Стать стандартом автономной торговли для профессиональных участников рынка, где каждая сделка основывается на данных в реальном времени, а не на устаревших отчётах. Мы формируем будущее, где торговые операции самодостаточны и безопасны.',
       highlights: [
-        'Next-Gen Spatial & Web3 Architectures',
-        '99.99% Availability Infrastructure SLAs',
-        'Continuous AI Model Optimization Pipelines',
+        'Данные в реальном времени',
+        'Профессиональные участники рынка',
+        'Стандарт отрасли',
       ],
     },
     {
       id: 'values' as const,
       icon: Shield,
-      title: 'Core Values',
-      subtitle: 'Principles Without Compromise',
+      title: 'Ценности',
+      subtitle: 'Принципы Zero Human',
       description:
-        'Excellence without compromise. Relentless innovation. Transparent collaboration. Sustainable growth. Ethical technology. Human-centered design.',
+        'Zero Human как стандарт, собственный капитал, скорость обработки данных, конфиденциальность, технологичность, экспертность — шесть принципов, которые определяют каждый наш шаг.',
       highlights: [
-        'Zero-Trust Security & IP Confidentiality',
-        'Agile Iteration with 100% Code Transparency',
-        'Dedicated Senior Engineering Taskforces',
+        'Zero Human — устранение лишних звеньев',
+        'Собственный капитал и полный контроль',
+        '190 AI-агентов и парсеры 24/7',
+        'Закрытый контур и конфиденциальность',
+        'SLM, MCP, SQL, голосовые ассистенты',
       ],
     },
   ];
 
   return (
     <section ref={ref} id="about" className="section-shell section-shell--alt py-24 md:py-32 px-6 md:px-10 relative overflow-hidden">
-      <div className="section-orb top-[-120px] left-[12%] w-[520px] h-[520px] bg-blue-500/12" />
-      <div className="section-orb bottom-[-140px] right-[8%] w-[640px] h-[640px] bg-indigo-400/8" />
+      <div className="section-orb top-[-120px] left-[12%] w-[520px] h-[520px] bg-orange-500/12" />
+      <div className="section-orb bottom-[-140px] right-[8%] w-[640px] h-[640px] bg-orange-400/8" />
 
       <div className="max-w-7xl mx-auto relative">
         {/* Section label */}
@@ -68,7 +70,7 @@ export default function About() {
             <div className="w-2 h-2 rounded-full bg-white/20" />
           </div>
           <span className="section-label">
-            About VORTX
+            О компании
           </span>
         </motion.div>
 
@@ -79,7 +81,7 @@ export default function About() {
           className="mb-8"
         >
           <div className="section-rail w-24 mb-5" />
-          <p className="section-eyebrow">Studio philosophy</p>
+          <p className="section-eyebrow">О компании</p>
         </motion.div>
 
         <motion.h2
@@ -88,9 +90,7 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="section-title mb-8 max-w-4xl"
         >
-          Quietly building the future
-          <br />
-          of digital experience
+          Торгуем крупными партиями. Работаем с лидерами.
         </motion.h2>
 
         {/* Description & Action buttons */}
@@ -101,7 +101,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-white/70 text-lg md:text-xl leading-relaxed max-w-3xl"
           >
-            We are a compact studio of strategists, engineers, and designers building systems that feel precise, calm, and unmistakably modern. Our work lives at the intersection of product thinking, engineering rigor, and visual craft.
+            ATOMICA — автономная технологическая торговая платформа, построенная на принципах Zero Human. Мы создали инфраструктуру, в которой ключевые бизнес-процессы — от мониторинга рынка до обработки сделок — выполняются искусственным интеллектом без участия человека. Это не просто автоматизация ради автоматизации. Это новая модель торговой компании, где скорость, точность и конфиденциальность достигаются за счёт глубокой интеграции передовых цифровых систем и собственных вычислительных мощностей.
           </motion.p>
 
           {/* Interactive CTA buttons */}
@@ -115,14 +115,14 @@ export default function About() {
               href="#contact"
               className="section-cta btn-cut px-6 py-3.5 text-sm font-medium rounded-xl"
             >
-              <span>Request Demo</span>
+              <span>Оставить заявку</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#services"
               className="section-cta-outline btn-cut px-6 py-3.5 text-sm font-medium rounded-xl"
             >
-              <span>View Services</span>
+              <span>Наши услуги</span>
             </a>
           </motion.div>
         </div>
@@ -142,7 +142,7 @@ export default function About() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`section-card cursor-pointer group relative rounded-2xl p-8 transition-all duration-500 ${
                   isActive
-                    ? 'border-white/40 bg-white/[0.08] shadow-2xl shadow-blue-500/10'
+                    ? 'border-white/40 bg-white/[0.08] shadow-2xl shadow-orange-500/10'
                     : 'border-white/10 hover:border-white/20'
                 }`}
               >
@@ -188,15 +188,15 @@ export default function About() {
               <Globe className="text-white w-6 h-6" />
             </div>
             <div>
-              <h4 className="text-white text-lg font-medium">Global Delivery Capability</h4>
-              <p className="text-white/50 text-sm">Teams distributed across North America, Europe, and Asia Pacific.</p>
+              <h4 className="text-white text-lg font-medium">Глобальное присутствие</h4>
+              <p className="text-white/50 text-sm">Команды в Европе, Азии и странах СНГ.</p>
             </div>
           </div>
           <a
             href="#contact"
             className="section-cta-outline px-5 py-3 rounded-xl shrink-0"
           >
-            <span>Contact Global Team</span>
+            <span>Связаться с командой</span>
             <ArrowRight size={14} />
           </a>
         </motion.div>

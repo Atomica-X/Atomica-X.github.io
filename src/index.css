@@ -2,6 +2,7 @@
 
 @theme {
   --font-family-inter: 'Inter', sans-serif;
+  --viewport-fit: 'cover';
 }
 
 :root {

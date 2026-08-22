@@ -56,7 +56,7 @@ export default function AdminLayout() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
             <span className="text-white font-bold text-sm">V</span>
           </div>
-          <span className="text-white font-semibold tracking-wide">VortxLab</span>
+          <span className="text-white font-semibold tracking-wide">ATOMICA</span>
           <button
             onClick={() => setSidebarOpen(false)}
             className="ml-auto lg:hidden text-white/50 hover:text-white"
